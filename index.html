@@ -21,6 +21,7 @@
                     <li><a href="#" class="nav-link" data-page="members">Members</a></li>
                     <li><a href="#" class="nav-link" data-page="workouts">Workouts</a></li>
                     <li><a href="#" class="nav-link" data-page="payments">Payments</a></li>
+                    <li><a href="#" class="nav-link" data-page="attendance">Attendance</a></li>
                     <li><a href="#" class="nav-link" data-page="settings">Settings</a></li>
                 </ul>
             </nav>
@@ -118,6 +119,7 @@
                             <th>Phone</th>
                             <th>Membership</th>
                             <th>Join Date</th>
+                            <th>Expiry</th>
                             <th>Status</th>
                             <th>Actions</th>
                         </tr>
@@ -157,6 +159,37 @@
             
             <div class="payment-cards" id="payment-cards-container">
                 <!-- Payment cards will be populated by JS -->
+            </div>
+        </section>
+
+        <!-- Attendance Section -->
+        <section id="attendance" class="page-section">
+            <div class="section-header">
+                <h2><i class="fas fa-clipboard-check"></i> Attendance</h2>
+                <p>Track member check-ins and check-outs</p>
+            </div>
+
+            <div class="members-controls">
+                <select id="attendance-member-select"></select>
+                <button class="btn btn-primary" id="log-attendance-btn">
+                    <i class="fas fa-plus"></i> Log Check-In (Now)
+                </button>
+            </div>
+
+            <div class="members-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Member</th>
+                            <th>Date</th>
+                            <th>Check-In</th>
+                            <th>Check-Out</th>
+                        </tr>
+                    </thead>
+                    <tbody id="attendance-table-body">
+                        <!-- Attendance will be populated by JS -->
+                    </tbody>
+                </table>
             </div>
         </section>
 
@@ -267,6 +300,7 @@
                         <li><a href="#" class="nav-link" data-page="members">Member Management</a></li>
                         <li><a href="#" class="nav-link" data-page="workouts">Workout Sessions</a></li>
                         <li><a href="#" class="nav-link" data-page="payments">Payment Tracking</a></li>
+                        <li><a href="#" class="nav-link" data-page="attendance">Attendance</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
